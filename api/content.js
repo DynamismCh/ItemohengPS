@@ -1,4 +1,4 @@
-import { list, put } from "@vercel/blob";
+import { get, put } from "@vercel/blob";
 import { readFile } from "node:fs/promises";
 import { timingSafeEqual } from "node:crypto";
 
@@ -15,11 +15,10 @@ function authorised(req) {
 }
 async function readContent() {
   if (token) {
-    const result = await list({ prefix: KEY, token });
-    const blob = result.blobs?.find(item => item.pathname === KEY);
-    if (blob) {
-      const response = await fetch(blob.downloadUrl || blob.url, { cache: "no-store" });
-      if (response.ok) return await response.json();
+    const result = await get(KEY, { access: "private", token, useCache: false });
+    if (result?.statusCode === 200 && result.stream) {
+      const response = new Response(result.stream);
+      return await response.json();
     }
   }
   const raw = await readFile(new URL("../content.json", import.meta.url), "utf8");
@@ -47,7 +46,7 @@ export default async function handler(req, res) {
     }
     const json = JSON.stringify(data);
     if (json.length > 900000) return res.status(413).json({ error: "The content is too large to publish." });
-    const blob = await put(KEY, json, { access: "public", addRandomSuffix: false, allowOverwrite: true, contentType: "application/json", token });
+    const blob = await put(KEY, json, { access: "private", addRandomSuffix: false, allowOverwrite: true, contentType: "application/json", token });
     return res.status(200).json({ success: true, url: blob.url });
   } catch (error) {
     console.error("[itemoheng] content publish failed:", error);
