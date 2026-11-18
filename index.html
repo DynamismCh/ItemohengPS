@@ -3,7 +3,7 @@
 @media(max-width:1050px){.nav{gap:10px}.nav a{font-size:.78rem}}@media(max-width:850px){.nav{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav.open{display:flex}.menu{display:block}.about,.donate,.contact{grid-template-columns:1fr}.staff{grid-template-columns:repeat(2,1fr)}.pillars,.cards,.gallery{grid-template-columns:1fr 1fr}.facts{margin:18px;grid-template-columns:1fr;padding:14px 22px}.fact{border:0;border-bottom:1px solid var(--line);padding:12px 4px}.fact:last-child{border:0}.tools{margin-left:auto}}@media(max-width:520px){.navwrap{padding:10px 14px}.brand img{width:44px;height:44px}.brand strong{font-size:.8rem}.brand small{font-size:.6rem}.topline{font-size:.72rem}.staff,.pillars,.cards,.gallery{grid-template-columns:1fr}.hero{min-height:500px}.hero-inner{padding:60px 22px}.hero h1{font-size:2.5rem}section{padding:58px 19px}.donate{padding:25px}.tools select{max-width:80px}}
 </style></head><body>
 <div class="topline"><span>Drieziek Extension 4 · Orange Farm, Gauteng</span><span>School reference: 700330878</span></div>
-<header class="header"><div class="navwrap"><a class="brand" href="#home"><img src="https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/itelogo.jpg" alt="Itemoheng Primary School crest"><span><strong>ITEMOHENG PRIMARY SCHOOL</strong><small>Strive for the best</small></span></a><div class="tools"><button id="smaller" aria-label="Decrease text size">A−</button><button id="larger" aria-label="Increase text size">A+</button><select id="language" aria-label="Language"><option value="en">English</option><option value="zu">isiZulu</option></select></div><button class="menu" id="menuBtn" aria-expanded="false">Menu ☰</button><nav class="nav" id="navigation"><a href="#home" data-en="Home" data-zu="Ekhaya">Home</a><a href="#about" data-en="About" data-zu="Mayelana">About</a><a href="#announcements" data-en="Notices" data-zu="Izaziso">Notices</a><a href="#gallery" data-en="Gallery" data-zu="Izithombe">Gallery</a><a href="#staff" data-en="Our team" data-zu="Ithimba">Our team</a><a href="#information" data-en="Parents" data-zu="Abazali">Parents</a><a class="contactlink" href="#contact" data-en="Contact us" data-zu="Xhumana nathi">Contact us</a></nav></div></header>
+<header class="header"><div class="navwrap"><a class="brand" href="#home"><img src="https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/itelogo.jpg" alt="Itemoheng Primary School crest"><span><strong>ITEMOHENG PRIMARY SCHOOL</strong><small>Strive for the best</small></span></a><div class="tools"><button id="smaller" aria-label="Decrease text size">A−</button><button id="larger" aria-label="Increase text size">A+</button><select id="language" aria-label="Language"><option value="en">English</option><option value="zu">isiZulu</option><option value="st">Sesotho</option></select></div><button class="menu" id="menuBtn" aria-expanded="false">Menu ☰</button><nav class="nav" id="navigation"><a href="#home" data-en="Home" data-zu="Ekhaya">Home</a><a href="#about" data-en="About" data-zu="Mayelana">About</a><a href="#announcements" data-en="Notices" data-zu="Izaziso">Notices</a><a href="#gallery" data-en="Gallery" data-zu="Izithombe">Gallery</a><a href="#staff" data-en="Our team" data-zu="Ithimba">Our team</a><a href="#information" data-en="Parents" data-zu="Abazali">Parents</a><a class="contactlink" href="#contact" data-en="Contact us" data-zu="Xhumana nathi">Contact us</a></nav></div></header>
 <main id="home"><div class="hero"><div class="hero-inner"><div class="eyebrow">Welcome to our school</div><h1>Learning today.<br>Leading tomorrow.</h1><p>At Itemoheng Primary School, we work together with learners, educators, families and our community to build a strong foundation for every child's future.</p><div class="actions"><a class="btn gold" href="#about">Discover our school</a><a class="btn outline" href="#contact">Get in touch</a></div></div></div>
 <div class="facts"><div class="fact"><b>Our motto</b><span>Strive for the best</span></div><div class="fact"><b>Our community</b><span>Drieziek Extension 4, Orange Farm</span></div><div class="fact"><b>School reference</b><span>700330878</span></div></div>
 <section id="about"><div class="about"><div><div class="head"><div class="eyebrow">Who we are</div><h2>A school community with a shared purpose.</h2><p class="lead">Itemoheng Primary School is a school where stakeholders are committed to helping learners and educators achieve their academic goals.</p></div><h3>Our vision</h3><p>To see all stakeholders display maximum commitment in assisting learners and educators to attain academic goals.</p><h3>Our mission</h3><p>To ensure educators and learners spend quality time during curriculum delivery, leading to excellent results through effective teaching and learning. We continuously seek parental support, deploy resources to support teaching and learning, and work to ensure every learner leaves the institution fully matured and educated.</p><div class="motto"><span class="eyebrow">Our motto</span><br><strong>STRIVE FOR THE BEST</strong></div></div><div class="photo" role="img" aria-label="School community photograph"></div></div><div class="pillars"><div class="pillar"><div class="num">01</div><h3>Effective teaching</h3><p>Making quality teaching and learning time count.</p></div><div class="pillar"><div class="num">02</div><h3>Community partnership</h3><p>Working with parents and stakeholders to support learners.</p></div><div class="pillar"><div class="num">03</div><h3>Learner growth</h3><p>Supporting each learner to develop and reach their potential.</p></div></div></section>
@@ -19,16 +19,152 @@
 <footer class="footer"><div class="footerinner"><div><strong>ITEMOHENG PRIMARY SCHOOL</strong><br><span class="fine">Strive for the best · Orange Farm, Gauteng</span></div><div><a href="#home">Back to top ↑</a><p class="fine">© <span id="year"></span> Itemoheng Primary School. All rights reserved.</p></div></div></footer>
 <script>
 const $=id=>document.getElementById(id),esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));const safe=v=>{try{const u=new URL(String(v),location.origin);return ["https:","http:"].includes(u.protocol)?u.href:"#"}catch{return "#"}};const dt=v=>{if(!v)return "";const d=new Date(v+"T00:00:00");return isNaN(d)?"":d.toLocaleDateString("en-ZA",{day:"numeric",month:"short",year:"numeric"})};const empty=t=>'<div class="card"><p>'+esc(t)+'</p></div>';
-function render(d){let a=d.announcements||[],n=d.news||[],g=d.gallery||[],c=d.calendar||[],s=d.staff||[],h=d.achievements||[],p=d.parentInfo||[],f=d.faqs||[];
-$("announcementsList").innerHTML=a.length?a.map(x=>'<article class="card"><div class="date">'+esc(x.category||"Notice")+' · '+esc(dt(x.date))+'</div><h3>'+esc(x.title)+'</h3><p>'+esc(x.body)+'</p></article>').join(""):empty("There are no new announcements at this time. Please check again soon.");
-$("newsList").innerHTML=n.length?n.map(x=>'<article class="card">'+(x.image?'<img src="'+esc(safe(x.image))+'" alt="" style="width:100%;height:150px;object-fit:cover;border-radius:8px">':"")+'<div class="date">'+esc(dt(x.date))+'</div><h3>'+esc(x.title)+'</h3><p>'+esc(x.summary||x.body)+'</p></article>').join(""):empty("School news and stories will appear here.");
-$("galleryList").innerHTML=g.length?g.map(x=>'<figure><img loading="lazy" src="'+esc(safe(x.image))+'" alt="'+esc(x.title)+'"><figcaption><b>'+esc(x.title)+'</b><span>'+esc(x.caption)+'</span></figcaption></figure>').join(""):empty("School photographs will be added here.");
-$("calendarList").innerHTML=c.length?c.slice().sort((x,y)=>String(x.date).localeCompare(String(y.date))).map(x=>'<article class="card"><div class="date">'+esc(dt(x.date))+'</div><h3>'+esc(x.title)+'</h3><p>'+esc(x.description)+'</p>'+(x.link?'<p style="margin-top:12px"><a href="'+esc(safe(x.link))+'" target="_blank" rel="noopener" style="color:#075b70;font-weight:800">Open document / details ↗</a></p>':"")+'</article>').join(""):empty("Please contact the school office for the current academic calendar and term dates.");
-$("staffList").innerHTML=s.length?s.map(x=>'<div class="person">'+(x.photo?'<img src="'+esc(safe(x.photo))+'" alt="" style="width:100%;height:125px;object-fit:cover;border-radius:7px;margin-bottom:10px">':"")+'<small>'+esc(x.role)+'</small><b>'+esc(x.name)+'</b><span class="fine" style="color:#60727a">'+esc(x.phase)+'</span></div>').join(""):empty("Staff information will be updated soon.");
-$("achievementsList").innerHTML=h.length?h.map(x=>'<article class="card"><div class="date">'+esc(dt(x.date))+'</div><h3>'+esc(x.title)+'</h3><p>'+esc(x.description)+'</p></article>').join(""):empty("Learner and school achievements will be shared here.");
-$("parentInfoList").innerHTML=p.length?p.map(x=>'<article class="card"><h3>'+esc(x.title)+'</h3><p>'+esc(x.description)+'</p>'+(x.link?'<p style="margin-top:10px"><a href="'+esc(safe(x.link))+'" target="_blank" rel="noopener" style="color:#075b70;font-weight:800">Read more ↗</a></p>':"")+'</article>').join(""):empty("Parent information will be updated soon.");
-$("faqList").innerHTML=f.length?f.map(x=>'<details><summary>'+esc(x.question)+'</summary><p>'+esc(x.answer)+'</p></details>').join(""):empty("Frequently asked questions will be added soon.");}
-$("year").textContent=new Date().getFullYear();const btn=$("menuBtn"),nav=$("navigation");btn.onclick=()=>{const o=nav.classList.toggle("open");btn.setAttribute("aria-expanded",String(o))};nav.querySelectorAll("a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));let fs=100;$("larger").onclick=()=>{fs=Math.min(125,fs+5);document.documentElement.style.fontSize=fs+"%"};$("smaller").onclick=()=>{fs=Math.max(90,fs-5);document.documentElement.style.fontSize=fs+"%"};$("language").onchange=e=>{const z=e.target.value==="zu";document.querySelectorAll("[data-en]").forEach(x=>x.textContent=z?x.dataset.zu:x.dataset.en);document.documentElement.lang=z?"zu":"en"};
-fetch("/api/content").then(r=>r.json()).then(render).catch(()=>["announcementsList","newsList","galleryList","calendarList","staffList","achievementsList","parentInfoList","faqList"].forEach(id=>$(id).innerHTML=empty("Information could not be loaded. Please refresh the page.")));
+let currentLanguage="en";const val=(o,k)=>o?.[k+"_"+currentLanguage]||o?.[k]||"";function render(d){let a=d.announcements||[],n=d.news||[],g=d.gallery||[],c=d.calendar||[],s=d.staff||[],h=d.achievements||[],p=d.parentInfo||[],f=d.faqs||[];
+$("announcementsList").innerHTML=a.length?a.map(x=>'<article class="card"><div class="date">'+esc(val(x,"category")||"Notice")+' · '+esc(dt(x.date))+'</div><h3>'+esc(val(x,"title"))+'</h3><p>'+esc(val(x,"body"))+'</p></article>').join(""):empty("There are no new announcements at this time. Please check again soon.");
+$("newsList").innerHTML=n.length?n.map(x=>'<article class="card">'+(x.image?'<img src="'+esc(safe(x.image))+'" alt="" style="width:100%;height:150px;object-fit:cover;border-radius:8px">':"")+'<div class="date">'+esc(dt(x.date))+'</div><h3>'+esc(val(x,"title"))+'</h3><p>'+esc(val(x,"summary")||val(x,"body"))+'</p></article>').join(""):empty("School news and stories will appear here.");
+$("galleryList").innerHTML=g.length?g.map(x=>'<figure><img loading="lazy" src="'+esc(safe(x.image))+'" alt="'+esc(val(x,"title"))+'"><figcaption><b>'+esc(val(x,"title"))+'</b><span>'+esc(val(x,"caption"))+'</span></figcaption></figure>').join(""):empty("School photographs will be added here.");
+$("calendarList").innerHTML=c.length?c.slice().sort((x,y)=>String(x.date).localeCompare(String(y.date))).map(x=>'<article class="card"><div class="date">'+esc(dt(x.date))+'</div><h3>'+esc(val(x,"title"))+'</h3><p>'+esc(val(x,"description"))+'</p>'+(x.link?'<p style="margin-top:12px"><a href="'+esc(safe(x.link))+'" target="_blank" rel="noopener" style="color:#075b70;font-weight:800">Open document / details ↗</a></p>':"")+'</article>').join(""):empty("Please contact the school office for the current academic calendar and term dates.");
+$("staffList").innerHTML=s.length?s.map(x=>'<div class="person">'+(x.photo?'<img src="'+esc(safe(x.photo))+'" alt="" style="width:100%;height:125px;object-fit:cover;border-radius:7px;margin-bottom:10px">':"")+'<small>'+esc(val(x,"role"))+'</small><b>'+esc(val(x,"name"))+'</b><span class="fine" style="color:#60727a">'+esc(val(x,"phase"))+'</span></div>').join(""):empty("Staff information will be updated soon.");
+$("achievementsList").innerHTML=h.length?h.map(x=>'<article class="card"><div class="date">'+esc(dt(x.date))+'</div><h3>'+esc(val(x,"title"))+'</h3><p>'+esc(val(x,"description"))+'</p></article>').join(""):empty("Learner and school achievements will be shared here.");
+$("parentInfoList").innerHTML=p.length?p.map(x=>'<article class="card"><h3>'+esc(val(x,"title"))+'</h3><p>'+esc(val(x,"description"))+'</p>'+(x.link?'<p style="margin-top:10px"><a href="'+esc(safe(x.link))+'" target="_blank" rel="noopener" style="color:#075b70;font-weight:800">Read more ↗</a></p>':"")+'</article>').join(""):empty("Parent information will be updated soon.");
+$("faqList").innerHTML=f.length?f.map(x=>'<details><summary>'+esc(val(x,"question"))+'</summary><p>'+esc(val(x,"answer"))+'</p></details>').join(""):empty("Frequently asked questions will be added soon.");}
+$("year").textContent=new Date().getFullYear();const btn=$("menuBtn"),nav=$("navigation");btn.onclick=()=>{const o=nav.classList.toggle("open");btn.setAttribute("aria-expanded",String(o))};nav.querySelectorAll("a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));let fs=100;$("larger").onclick=()=>{fs=Math.min(125,fs+5);document.documentElement.style.fontSize=fs+"%"};$("smaller").onclick=()=>{fs=Math.max(90,fs-5);document.documentElement.style.fontSize=fs+"%"};const translations={
+zu:{
+"Drieziek Extension 4 · Orange Farm, Gauteng":"Drieziek Extension 4 · Orange Farm, eGauteng",
+"School reference: 700330878":"Inombolo yesikole: 700330878",
+"Strive for the best":"Lwela ukwenza okuhle kakhulu",
+"Welcome to our school":"Siyakwamukela esikoleni sethu",
+"Learning today.":"Sifunda namuhla.",
+"Leading tomorrow.":"Sihola kusasa.",
+"At Itemoheng Primary School, we work together with learners, educators, families and our community to build a strong foundation for every child's future.":"E-Itemoheng Primary School, sisebenzisana nabafundi, othisha, imindeni nomphakathi ukwakha isisekelo esiqinile sekusasa lengane ngayinye.",
+"Discover our school":"Funda kabanzi ngesikole sethu",
+"Get in touch":"Xhumana nathi",
+"Our motto":"Isiqubulo sethu",
+"Our community":"Umphakathi wethu",
+"Who we are":"Singobani",
+"A school community with a shared purpose.":"Umphakathi wesikole onenhloso efanayo.",
+"Itemoheng Primary School is a school where stakeholders are committed to helping learners and educators achieve their academic goals.":"I-Itemoheng Primary School yisikole lapho bonke ababambiqhaza bezibophezele ekusizeni abafundi nothisha ukuba bafinyelele imigomo yabo yezemfundo.",
+"Our vision":"Umbono wethu",
+"Our mission":"Inhloso yethu",
+"Effective teaching":"Ukufundisa okuphumelelayo",
+"Making quality teaching and learning time count.":"Ukuqinisekisa ukuthi isikhathi sokufundisa nokufunda siyasetshenziswa kahle.",
+"Community partnership":"Ukubambisana nomphakathi",
+"Working with parents and stakeholders to support learners.":"Ukusebenzisana nabazali nababambiqhaza ukweseka abafundi.",
+"Learner growth":"Ukuthuthuka kwabafundi",
+"Supporting each learner to develop and reach their potential.":"Ukusiza umfundi ngamunye athuthuke futhi afinyelele emandleni akhe.",
+"Stay informed":"Hlala unolwazi",
+"School announcements":"Izaziso zesikole",
+"Important notices and reminders from the school.":"Izaziso ezibalulekile nezikhumbuzo ezivela esikoleni.",
+"What's happening":"Okwenzekayo",
+"Latest school news":"Izindaba zakamuva zesikole",
+"Activities, events and stories from our school community.":"Imisebenzi, imicimbi nezindaba zomphakathi wesikole sethu.",
+"Life at Itemoheng":"Impilo e-Itemoheng",
+"School gallery":"Igalari yesikole",
+"A few moments from our school community.":"Izikhathi ezimbalwa ezivela emphakathini wesikole sethu.",
+"Plan ahead":"Hlela kusenesikhathi",
+"Academic calendar and events":"Ikhalenda yezifundo nemicimbi",
+"Check this section for important dates and school activities. Please confirm dates with the school.":"Bheka lapha izinsuku ezibalulekile nemisebenzi yesikole. Sicela uqinisekise izinsuku nesikole.",
+"Our people":"Abantu bakithi",
+"Meet the school team":"Yazi ithimba lesikole",
+"Our leadership and educators work together to create a positive learning environment.":"Abaholi nothisha bethu basebenzisana ukwakha indawo enhle yokufunda.",
+"Celebrating progress":"Sibungaza intuthuko",
+"Achievements and awards":"Impumelelo nemiklomelo",
+"Celebrating the hard work and accomplishments of our learners and school community.":"Sibungaza ukusebenza kanzima nempumelelo yabafundi nomphakathi wesikole.",
+"For parents and guardians":"Kubazali nakubanakekeli",
+"Parent information centre":"Isikhungo solwazi lwabazali",
+"Helpful information to support families. Contact the school for the latest official requirements.":"Ulwazi oluwusizo lokweseka imindeni. Xhumana nesikole ukuze uthole izidingo zakamuva ezisemthethweni.",
+"Frequently asked questions":"Imibuzo evame ukubuzwa",
+"Make a difference":"Yenza umehluko",
+"Partner with Itemoheng Primary School.":"Bambisana ne-Itemoheng Primary School.",
+"Itemoheng is a quintile 1 school serving the Drieziek Extension 4 community in Orange Farm. Companies and individuals are welcome to support the school by donating funds or useful resources, or by helping children in need.":"I-Itemoheng iyisikole se-quintile 1 esisebenzela umphakathi wase-Drieziek Extension 4 e-Orange Farm. Izinkampani nabantu ngabanye bamukelekile ukweseka isikole ngokunikela ngemali, ngezinsiza eziwusizo noma ngokusiza izingane ezidingayo.",
+"Your contribution can help strengthen teaching, learning and opportunities for our learners.":"Umnikelo wakho ungasiza ukuqinisa ukufundisa, ukufunda namathuba abafundi bethu.",
+"Discuss a donation":"Xoxa ngomnikelo",
+"Contact and directions":"Oxhumana nabo nezikhombisi-ndlela",
+"We would love to hear from you.":"Singajabula ukuzwa kuwe.",
+"Reach out to the school or send a general enquiry.":"Xhumana nesikole noma uthumele umbuzo.",
+"Send an enquiry":"Thumela umbuzo",
+"Your name *":"Igama lakho *",
+"Email address *":"Ikheli le-imeyili *",
+"Your message *":"Umlayezo wakho *",
+"I agree that the school may use my contact details to respond to this enquiry.":"Ngiyavuma ukuthi isikole sisebenzise imininingwane yami yokuxhumana ukuphendula lo mbuzo.",
+"Send enquiry":"Thumela umbuzo",
+"Back to top ↑":"Buyela phezulu ↑",
+"Home":"Ekhaya","About":"Mayelana","Notices":"Izaziso","Gallery":"Izithombe","Our team":"Ithimba lethu","Parents":"Abazali","Contact us":"Xhumana nathi"
+},
+st:{
+"Drieziek Extension 4 · Orange Farm, Gauteng":"Drieziek Extension 4 · Orange Farm, Gauteng",
+"School reference: 700330878":"Nomoro ea sekolo: 700330878",
+"Strive for the best":"Loanela ho etsa se molemo ka ho fetisisa",
+"Welcome to our school":"Rea u amohela sekolong sa rona",
+"Learning today.":"Ho ithuta kajeno.",
+"Leading tomorrow.":"Ho etella pele hosane.",
+"At Itemoheng Primary School, we work together with learners, educators, families and our community to build a strong foundation for every child's future.":"Sekolong sa Itemoheng Primary School, re sebetsa hammoho le baithuti, matichere, malapa le sechaba ho aha motheo o tiileng bakeng sa bokamoso ba ngoana e mong le e mong.",
+"Discover our school":"Ithute haholoanyane ka sekolo sa rona",
+"Get in touch":"Ikopanye le rona",
+"Our motto":"Lepetjo la rona",
+"Our community":"Sechaba sa rona",
+"Who we are":"Re bo-mang",
+"A school community with a shared purpose.":"Sechaba sa sekolo se nang le sepheo se le seng.",
+"Itemoheng Primary School is a school where stakeholders are committed to helping learners and educators achieve their academic goals.":"Itemoheng Primary School ke sekolo seo bohle ba amehang ba ikemiselitseng ho thusa baithuti le matichere ho fihlela lipheo tsa bona tsa thuto.",
+"Our vision":"Pono ea rona",
+"Our mission":"Morero oa rona",
+"Effective teaching":"Thuto e atlehang",
+"Making quality teaching and learning time count.":"Ho sebelisa nako ea ho ruta le ho ithuta ka katleho.",
+"Community partnership":"Tšebelisano le sechaba",
+"Working with parents and stakeholders to support learners.":"Ho sebetsa le batsoali le bohle ba amehang ho tšehetsa baithuti.",
+"Learner growth":"Kholo ea baithuti",
+"Supporting each learner to develop and reach their potential.":"Ho thusa moithuti e mong le e mong ho hola le ho fihlela bokhoni ba hae.",
+"Stay informed":"Lula u tseba",
+"School announcements":"Litsebiso tsa sekolo",
+"Important notices and reminders from the school.":"Litsebiso tsa bohlokoa le likhopotso tse tsoang sekolong.",
+"What's happening":"Se etsahalang",
+"Latest school news":"Litaba tsa morao-rao tsa sekolo",
+"Activities, events and stories from our school community.":"Mesebetsi, liketsahalo le lipale tse tsoang sechabeng sa sekolo sa rona.",
+"Life at Itemoheng":"Bophelo ba Itemoheng",
+"School gallery":"Pokello ea litšoantšo tsa sekolo",
+"A few moments from our school community.":"Linako tse 'maloa tse tsoang sechabeng sa sekolo sa rona.",
+"Plan ahead":"Rera esale pele",
+"Academic calendar and events":"Khalendara ea thuto le liketsahalo",
+"Check this section for important dates and school activities. Please confirm dates with the school.":"Sheba karolo ena bakeng sa matsatsi a bohlokoa le mesebetsi ea sekolo. Ka kopo netefatsa matsatsi le sekolo.",
+"Our people":"Batho ba rona",
+"Meet the school team":"Kopana le basebetsi ba sekolo",
+"Our leadership and educators work together to create a positive learning environment.":"Baetapele le matichere ba rona ba sebetsa hammoho ho theha tikoloho e ntle ea ho ithuta.",
+"Celebrating progress":"Ho keteka tsoelo-pele",
+"Achievements and awards":"Katleho le likhau",
+"Celebrating the hard work and accomplishments of our learners and school community.":"Re keteka mosebetsi o boima le katleho ea baithuti le sechaba sa sekolo sa rona.",
+"For parents and guardians":"Bakeng sa batsoali le bahlokomeli",
+"Parent information centre":"Setsi sa litaba tsa batsoali",
+"Helpful information to support families. Contact the school for the latest official requirements.":"Lintlha tse thusang malapa. Ikopanye le sekolo bakeng sa litlhoko tsa morao-rao tsa semmuso.",
+"Frequently asked questions":"Lipotso tse botsoang khafetsa",
+"Make a difference":"Etsa phapang",
+"Partner with Itemoheng Primary School.":"Sebetsa 'moho le Itemoheng Primary School.",
+"Itemoheng is a quintile 1 school serving the Drieziek Extension 4 community in Orange Farm. Companies and individuals are welcome to support the school by donating funds or useful resources, or by helping children in need.":"Itemoheng ke sekolo sa quintile 1 se sebeletsang sechaba sa Drieziek Extension 4, Orange Farm. Likhamphani le batho ka bomong ba amohelehile ho tšehetsa sekolo ka menehelo ea chelete, lisebelisoa tse molemo kapa thuso ho bana ba hlokang.",
+"Your contribution can help strengthen teaching, learning and opportunities for our learners.":"Monehelo oa hau o ka thusa ho matlafatsa ho ruta, ho ithuta le menyetla ea baithuti ba rona.",
+"Discuss a donation":"Buisana ka monehelo",
+"Contact and directions":"Mokhoa oa ho ikopanya le rona le litsela",
+"We would love to hear from you.":"Re ka thabela ho utloa ho tsoa ho uena.",
+"Reach out to the school or send a general enquiry.":"Ikopanye le sekolo kapa u romele potso.",
+"Send an enquiry":"Romela potso",
+"Your name *":"Lebitso la hau *",
+"Email address *":"Aterese ea lengolo-tsoibila *",
+"Your message *":"Molaetsa oa hau *",
+"I agree that the school may use my contact details to respond to this enquiry.":"Ke lumela hore sekolo se ka sebelisa lintlha tsa ka tsa puisano ho araba potso ena.",
+"Send enquiry":"Romela potso",
+"Back to top ↑":"Khutlela holimo ↑",
+"Home":"Lehae","About":"Ka rona","Notices":"Litsebiso","Gallery":"Litšoantšo","Our team":"Sehlopha sa rona","Parents":"Batsoali","Contact us":"Ikopanye le rona"
+}};
+function applyLanguage(lang){
+ currentLanguage=lang;document.documentElement.lang=lang;
+ const dict=translations[lang]||{};
+ const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+ let node;while(node=walker.nextNode()){const raw=node.nodeValue;const trimmed=raw.trim();if(dict[trimmed])node.nodeValue=raw.replace(trimmed,dict[trimmed]);}
+ document.querySelectorAll("[data-en]").forEach(x=>{const v=x.dataset[lang]||x.dataset.en;if(x.childElementCount===0)x.textContent=v;});
+ document.querySelectorAll("input,textarea").forEach(el=>{if(el.dataset.enPlaceholder)el.placeholder=el.dataset[lang+"Placeholder"]||el.dataset.enPlaceholder;});
+ // Re-render editable content so optional language-specific fields are used.
+ if(window.siteContent)render(window.siteContent);
+}
+$("language").onchange=e=>applyLanguage(e.target.value);
+
+fetch("/api/content").then(r=>r.json()).then(d=>{window.siteContent=d;render(d);applyLanguage($("language").value)}).catch(()=>["announcementsList","newsList","galleryList","calendarList","staffList","achievementsList","parentInfoList","faqList"].forEach(id=>$(id).innerHTML=empty("Information could not be loaded. Please refresh the page.")));
 $("enquiryForm").onsubmit=async e=>{e.preventDefault();const f=e.currentTarget,b=f.querySelector("button");b.disabled=true;b.textContent="Sending…";$("enqStatus").textContent="";try{const d=Object.fromEntries(new FormData(f).entries());d.consent=$("enqConsent").checked;const r=await fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)}),v=await r.json();if(!r.ok)throw Error(v.error||"Could not send enquiry");$("enqStatus").className="notice";$("enqStatus").textContent=v.message;f.reset()}catch(err){$("enqStatus").textContent=err.message;$("enqStatus").style.color="#a33"}finally{b.disabled=false;b.textContent="Send enquiry"}};
 </script></body></html>
