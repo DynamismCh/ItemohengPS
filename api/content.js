@@ -30,7 +30,7 @@ export default async function handler(req, res) {
   res.setHeader("X-Content-Type-Options", "nosniff");
   if (req.method === "GET") {
     try { return res.status(200).json(await readContent()); }
-    catch (error) { return res.status(500).json({ error: "Unable to load website content." }); }
+    catch (error) { console.error("[itemoheng] content load failed:", error); return res.status(500).json({ error: "Unable to load website content." }); }
   }
   if (req.method !== "PUT") {
     res.setHeader("Allow", "GET, PUT");
@@ -50,6 +50,7 @@ export default async function handler(req, res) {
     const blob = await put(KEY, json, { access: "public", addRandomSuffix: false, allowOverwrite: true, contentType: "application/json", token });
     return res.status(200).json({ success: true, url: blob.url });
   } catch (error) {
-    return res.status(400).json({ error: "Could not publish the content. Check the entries and try again." });
+    console.error("[itemoheng] content publish failed:", error);
+    return res.status(500).json({ error: "The server could not save your changes. Please try again. The technical error has been recorded for troubleshooting." });
   }
 }
