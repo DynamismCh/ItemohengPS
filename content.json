@@ -1,0 +1,117 @@
+{
+  "announcements": [],
+  "news": [],
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "Our school community",
+      "caption": "A glimpse of life at Itemoheng Primary School.",
+      "image": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/itma.jpg"
+    },
+    {
+      "id": "g2",
+      "title": "Learning together",
+      "caption": "Building a positive learning environment.",
+      "image": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/IMG-20200921-WA0006.jpg"
+    }
+  ],
+  "calendar": [
+    {
+      "id": "c1",
+      "title": "Archived 2025 school calendar",
+      "date": "2025-01-01",
+      "description": "Archived reference only. Contact the school for the current calendar.",
+      "link": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/2025.pdf"
+    }
+  ],
+  "staff": [
+    {
+      "id": "s1",
+      "name": "MV Dladla",
+      "role": "Principal",
+      "phase": "School leadership"
+    },
+    {
+      "id": "s2",
+      "name": "LT Radebe",
+      "role": "Deputy Principal",
+      "phase": "School leadership"
+    },
+    {
+      "id": "s3",
+      "name": "Ms Khumalo",
+      "role": "Deputy Principal",
+      "phase": "School leadership"
+    },
+    {
+      "id": "s4",
+      "name": "Mahlangu Bella",
+      "role": "HOD · Foundation Phase",
+      "phase": "Foundation Phase"
+    },
+    {
+      "id": "s5",
+      "name": "Hlongwane Glenda",
+      "role": "HOD · Foundation Phase",
+      "phase": "Foundation Phase"
+    },
+    {
+      "id": "s6",
+      "name": "Malindi Themba",
+      "role": "HOD · Senior Phase",
+      "phase": "Senior Phase"
+    },
+    {
+      "id": "s7",
+      "name": "Mbokwane Motia Thandiwe",
+      "role": "HOD · Intermediate Phase",
+      "phase": "Intermediate Phase"
+    },
+    {
+      "id": "s8",
+      "name": "Kweza Faniswa Amelia",
+      "role": "HOD · Intermediate Phase",
+      "phase": "Intermediate Phase"
+    }
+  ],
+  "achievements": [],
+  "parentInfo": [
+    {
+      "id": "p1",
+      "title": "Admissions and enrolment",
+      "description": "For admission requirements, availability and enrolment dates, please contact the school office."
+    },
+    {
+      "id": "p2",
+      "title": "School uniform",
+      "description": "Please contact the school to confirm current uniform requirements and approved suppliers."
+    },
+    {
+      "id": "p3",
+      "title": "Stationery and learning materials",
+      "description": "Contact the relevant class teacher or school office for the latest stationery list."
+    },
+    {
+      "id": "p4",
+      "title": "Attendance and punctuality",
+      "description": "Regular attendance and arriving on time help learners benefit fully from teaching and learning."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "f1",
+      "question": "How do I contact the school?",
+      "answer": "Call 078 589 5953 or 082 557 1288, or use the email addresses listed on this website."
+    },
+    {
+      "id": "f2",
+      "question": "Where is the school located?",
+      "answer": "Itemoheng Primary School is at 1190 Drieziek 4, Orange Farm, Gauteng."
+    },
+    {
+      "id": "f3",
+      "question": "Where can I get the current school calendar?",
+      "answer": "Please contact the school office for the latest approved calendar and term dates."
+    }
+  ]
+}
