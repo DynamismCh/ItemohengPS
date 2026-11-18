@@ -153,11 +153,11 @@ st:{
 "Back to top ↑":"Khutlela holimo ↑",
 "Home":"Lehae","About":"Ka rona","Notices":"Litsebiso","Gallery":"Litšoantšo","Our team":"Sehlopha sa rona","Parents":"Batsoali","Contact us":"Ikopanye le rona"
 }};
-function applyLanguage(lang){
+const originalText=new WeakMap();function applyLanguage(lang){
  currentLanguage=lang;document.documentElement.lang=lang;
  const dict=translations[lang]||{};
  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
- let node;while(node=walker.nextNode()){const raw=node.nodeValue;const trimmed=raw.trim();if(dict[trimmed])node.nodeValue=raw.replace(trimmed,dict[trimmed]);}
+ let node;while(node=walker.nextNode()){if(!originalText.has(node))originalText.set(node,node.nodeValue);const raw=originalText.get(node);node.nodeValue=raw;const trimmed=raw.trim();if(dict[trimmed])node.nodeValue=raw.replace(trimmed,dict[trimmed]);}
  document.querySelectorAll("[data-en]").forEach(x=>{const v=x.dataset[lang]||x.dataset.en;if(x.childElementCount===0)x.textContent=v;});
  document.querySelectorAll("input,textarea").forEach(el=>{if(el.dataset.enPlaceholder)el.placeholder=el.dataset[lang+"Placeholder"]||el.dataset.enPlaceholder;});
  // Re-render editable content so optional language-specific fields are used.
