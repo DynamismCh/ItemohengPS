@@ -6,13 +6,21 @@
       "id": "g1",
       "title": "Our school community",
       "caption": "A glimpse of life at Itemoheng Primary School.",
-      "image": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/itma.jpg"
+      "image": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/itma.jpg",
+      "title_zu": "Umphakathi wesikole sethu",
+      "caption_zu": "Ukubona kafushane impilo e-Itemoheng Primary School.",
+      "title_st": "Sechaba sa sekolo sa rona",
+      "caption_st": "Pono e nyane ea bophelo ba Itemoheng Primary School."
     },
     {
       "id": "g2",
       "title": "Learning together",
       "caption": "Building a positive learning environment.",
-      "image": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/IMG-20200921-WA0006.jpg"
+      "image": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/IMG-20200921-WA0006.jpg",
+      "title_zu": "Ukufunda ndawonye",
+      "caption_zu": "Ukwakha indawo enhle yokufunda.",
+      "title_st": "Ho ithuta hammoho",
+      "caption_st": "Ho aha tikoloho e ntle ea ho ithuta."
     }
   ],
   "calendar": [
@@ -21,7 +29,11 @@
       "title": "Archived 2025 school calendar",
       "date": "2025-01-01",
       "description": "Archived reference only. Contact the school for the current calendar.",
-      "link": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/2025.pdf"
+      "link": "https://raw.githubusercontent.com/DynamismCh/ItemohengPS/main/2025.pdf",
+      "title_zu": "Ikhalenda yesikole ka-2025 egciniwe",
+      "description_zu": "Isetshenziswa njengereferensi endala kuphela. Xhumana nesikole ukuze uthole ikhalenda yamanje.",
+      "title_st": "Khalendara ea sekolo ea 2025 e bolokiloeng",
+      "description_st": "Ke tokomane ea khale ea litšupiso feela. Ikopanye le sekolo bakeng sa khalendara ea hajoale."
     }
   ],
   "staff": [
@@ -29,49 +41,81 @@
       "id": "s1",
       "name": "MV Dladla",
       "role": "Principal",
-      "phase": "School leadership"
+      "phase": "School leadership",
+      "role_zu": "Uthishanhloko",
+      "phase_zu": "Ubuholi besikole",
+      "role_st": "Mosuoe-hlooho",
+      "phase_st": "Boetapele ba sekolo"
     },
     {
       "id": "s2",
       "name": "LT Radebe",
       "role": "Deputy Principal",
-      "phase": "School leadership"
+      "phase": "School leadership",
+      "role_zu": "Iphini likathishanhloko",
+      "phase_zu": "Ubuholi besikole",
+      "role_st": "Motlatsi oa mosuoe-hlooho",
+      "phase_st": "Boetapele ba sekolo"
     },
     {
       "id": "s3",
       "name": "Ms Khumalo",
       "role": "Deputy Principal",
-      "phase": "School leadership"
+      "phase": "School leadership",
+      "role_zu": "Iphini likathishanhloko",
+      "phase_zu": "Ubuholi besikole",
+      "role_st": "Motlatsi oa mosuoe-hlooho",
+      "phase_st": "Boetapele ba sekolo"
     },
     {
       "id": "s4",
       "name": "Mahlangu Bella",
       "role": "HOD · Foundation Phase",
-      "phase": "Foundation Phase"
+      "phase": "Foundation Phase",
+      "role_zu": "Inhloko yomnyango · Isigaba sokuqala",
+      "phase_zu": "Isigaba sokuqala",
+      "role_st": "Hlooho ea lefapha · Mokhahlelo oa Motheo",
+      "phase_st": "Mokhahlelo oa Motheo"
     },
     {
       "id": "s5",
       "name": "Hlongwane Glenda",
       "role": "HOD · Foundation Phase",
-      "phase": "Foundation Phase"
+      "phase": "Foundation Phase",
+      "role_zu": "Inhloko yomnyango · Isigaba sokuqala",
+      "phase_zu": "Isigaba sokuqala",
+      "role_st": "Hlooho ea lefapha · Mokhahlelo oa Motheo",
+      "phase_st": "Mokhahlelo oa Motheo"
     },
     {
       "id": "s6",
       "name": "Malindi Themba",
       "role": "HOD · Senior Phase",
-      "phase": "Senior Phase"
+      "phase": "Senior Phase",
+      "role_zu": "Inhloko yomnyango · Isigaba esiphezulu",
+      "phase_zu": "Isigaba esiphezulu",
+      "role_st": "Hlooho ea lefapha · Mokhahlelo o Phahameng",
+      "phase_st": "Mokhahlelo o Phahameng"
     },
     {
       "id": "s7",
       "name": "Mbokwane Motia Thandiwe",
       "role": "HOD · Intermediate Phase",
-      "phase": "Intermediate Phase"
+      "phase": "Intermediate Phase",
+      "role_zu": "Inhloko yomnyango · Isigaba esiphakathi",
+      "phase_zu": "Isigaba esiphakathi",
+      "role_st": "Hlooho ea lefapha · Mokhahlelo o Mahareng",
+      "phase_st": "Mokhahlelo o Mahareng"
     },
     {
       "id": "s8",
       "name": "Kweza Faniswa Amelia",
       "role": "HOD · Intermediate Phase",
-      "phase": "Intermediate Phase"
+      "phase": "Intermediate Phase",
+      "role_zu": "Inhloko yomnyango · Isigaba esiphakathi",
+      "phase_zu": "Isigaba esiphakathi",
+      "role_st": "Hlooho ea lefapha · Mokhahlelo o Mahareng",
+      "phase_st": "Mokhahlelo o Mahareng"
     }
   ],
   "achievements": [],
@@ -79,39 +123,67 @@
     {
       "id": "p1",
       "title": "Admissions and enrolment",
-      "description": "For admission requirements, availability and enrolment dates, please contact the school office."
+      "description": "For admission requirements, availability and enrolment dates, please contact the school office.",
+      "title_zu": "Ukwamukelwa nokubhaliswa",
+      "description_zu": "Ukuze uthole izidingo zokwamukelwa, izikhala nezinsuku zokubhalisa, sicela uxhumane nehhovisi lesikole.",
+      "title_st": "Kamohelo le ngoliso",
+      "description_st": "Bakeng sa litlhoko tsa kamohelo, libaka tse teng le matsatsi a ngoliso, ka kopo ikopanye le ofisi ea sekolo."
     },
     {
       "id": "p2",
       "title": "School uniform",
-      "description": "Please contact the school to confirm current uniform requirements and approved suppliers."
+      "description": "Please contact the school to confirm current uniform requirements and approved suppliers.",
+      "title_zu": "Umfaniswano wesikole",
+      "description_zu": "Sicela uxhumane nesikole ukuze uqinisekise izidingo zamanje zomfaniswano nabahlinzeki abagunyaziwe.",
+      "title_st": "Seaparo sa sekolo",
+      "description_st": "Ka kopo ikopanye le sekolo ho netefatsa litlhoko tsa seaparo sa sekolo le barekisi ba lumelletsoeng."
     },
     {
       "id": "p3",
       "title": "Stationery and learning materials",
-      "description": "Contact the relevant class teacher or school office for the latest stationery list."
+      "description": "Contact the relevant class teacher or school office for the latest stationery list.",
+      "title_zu": "Izincwadi nezinto zokufunda",
+      "description_zu": "Xhumana nothisha wekilasi noma nehhovisi lesikole ukuze uthole uhlu lwakamuva lwezinto zokubhala.",
+      "title_st": "Libuka le lisebelisoa tsa ho ithuta",
+      "description_st": "Ikopanye le mosuoe oa sehlopha kapa ofisi ea sekolo bakeng sa lenane la morao-rao la lisebelisoa tsa sekolo."
     },
     {
       "id": "p4",
       "title": "Attendance and punctuality",
-      "description": "Regular attendance and arriving on time help learners benefit fully from teaching and learning."
+      "description": "Regular attendance and arriving on time help learners benefit fully from teaching and learning.",
+      "title_zu": "Ukuya esikoleni ngesikhathi",
+      "description_zu": "Ukuya esikoleni njalo nokufika ngesikhathi kusiza abafundi bazuze ngokugcwele ekufundiseni nasekufundeni.",
+      "title_st": "Ho ba teng sekolong le ho fihla ka nako",
+      "description_st": "Ho ea sekolong kamehla le ho fihla ka nako ho thusa baithuti ho rua molemo thutong."
     }
   ],
   "faqs": [
     {
       "id": "f1",
       "question": "How do I contact the school?",
-      "answer": "Call 078 589 5953 or 082 557 1288, or use the email addresses listed on this website."
+      "answer": "Call 078 589 5953 or 082 557 1288, or use the email addresses listed on this website.",
+      "question_zu": "Ngingaxhumana kanjani nesikole?",
+      "answer_zu": "Shayela ku-078 589 5953 noma ku-082 557 1288, noma usebenzise amakheli e-imeyili akule webhusayithi.",
+      "question_st": "Nka ikopanya le sekolo joang?",
+      "answer_st": "Letsetsa 078 589 5953 kapa 082 557 1288, kapa sebelisa liaterese tsa lengolo-tsoibila tse fumanehang webosaeteng ena."
     },
     {
       "id": "f2",
       "question": "Where is the school located?",
-      "answer": "Itemoheng Primary School is at 1190 Drieziek 4, Orange Farm, Gauteng."
+      "answer": "Itemoheng Primary School is at 1190 Drieziek 4, Orange Farm, Gauteng.",
+      "question_zu": "Sikuphi isikole?",
+      "answer_zu": "I-Itemoheng Primary School iku-1190 Drieziek 4, Orange Farm, eGauteng.",
+      "question_st": "Sekolo se hokae?",
+      "answer_st": "Itemoheng Primary School e fumaneha 1190 Drieziek 4, Orange Farm, Gauteng."
     },
     {
       "id": "f3",
       "question": "Where can I get the current school calendar?",
-      "answer": "Please contact the school office for the latest approved calendar and term dates."
+      "answer": "Please contact the school office for the latest approved calendar and term dates.",
+      "question_zu": "Ngingayitholaphi ikhalenda yesikole yamanje?",
+      "answer_zu": "Sicela uxhumane nehhovisi lesikole ukuze uthole ikhalenda egunyaziwe yakamuva nezinsuku zethemu.",
+      "question_st": "Nka fumana khalendara ea sekolo ea hajoale hokae?",
+      "answer_st": "Ka kopo ikopanye le ofisi ea sekolo bakeng sa khalendara e amohetsoeng le matsatsi a kotara ea sekolo."
     }
   ]
 }
